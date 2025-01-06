@@ -6,10 +6,10 @@ import { FaCableCar, FaLocationArrow, FaLocationPin, FaPhone } from "react-icons
 const Contact = () => {
   return (
     
-    <div>
+    <div className="bg-gray-50">
         <Navbar></Navbar>
 
-        <section className="bg-gray-50 py-12 px-6">
+        <section className="w-11/12 mx-auto py-12 ">
             {/* Introduction Section */}
             <div className="text-center mb-12 bg-[#000A50] py-20 text-white px-10 md:px-20">
                 <h1 className="text-2xl md:text-3xl font-semibold  mb-4 font-ZenDots">Contact Us</h1>

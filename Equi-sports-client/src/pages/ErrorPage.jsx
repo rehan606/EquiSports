@@ -3,7 +3,7 @@
 const ErrorPage = () => {
     
     return (
-        <div className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 flex items-center justify-center min-h-screen">
+        <div className="bg-[#000A50] flex items-center justify-center min-h-screen">
             <div className="text-center px-8 py-12 bg-white rounded-lg shadow-lg max-w-md w-full">
                 {/* Animated Icon */}
                 <div className="relative mb-6 animate-pulse">
@@ -36,7 +36,7 @@ const ErrorPage = () => {
                 {/* Back to Home Button */}
                 <a
                     href="/"
-                    className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition transform hover:scale-105 duration-300"
+                    className="bg-[#000A50]  text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition transform hover:scale-105 duration-300"
                 >
                     Go Back to Home
                 </a>

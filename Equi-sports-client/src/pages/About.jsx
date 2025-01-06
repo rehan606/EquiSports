@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <div>
+    <div className="bg-gray-50">
         <Navbar></Navbar>
-        <section className="bg-gray-50 py-12 px-6">
+        <section className=" py-12 w-11/12 mx-auto">
             <div className="max-w-7xl mx-auto">
                 {/* Introduction Section */}
                 <div className="text-center mb-12 bg-[#000A50] py-20 text-white px-10 md:px-20">

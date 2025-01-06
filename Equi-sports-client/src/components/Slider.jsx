@@ -26,7 +26,7 @@ const Slide = () => {
                 autoplay={{ delay: 3000 }}
             >
                 <SwiperSlide>
-                    <div>
+                    <div >
                         <div className=" flex flex-col md:flex-row justify-between items-center pt-10 pb-10 gap-2 " >
                             <div className='md:w-1/2 space-y-2 '>
                                 
@@ -39,7 +39,7 @@ const Slide = () => {
                                     <Link to='/allEquipment'  className="  bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] px-10 py-4  font-semibold cursor-pointer ">Shop Now</Link>
                                 
                             </div>
-                            <div className=' md:w-1/2 mt-10 md:mt-0'>
+                            <div className=' md:w-1/2 mt-10 md:mt-0 h-[600px]'>
 
                                 <img src="https://i.ibb.co.com/72jLQXT/slide-2.webp" alt="" className='w-full h-full' />
                                 
@@ -58,7 +58,7 @@ const Slide = () => {
 
                                 <Link to='/allEquipment' className="  bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] px-10 py-4  font-semibold cursor-pointer ">Shop Now</Link>
                             </div>
-                            <div className='md:w-1/2 mt-10 md:mt-0'>
+                            <div className='md:w-1/2 mt-10 md:mt-0 h-[600px]'>
 
                                 <img src="https://i.ibb.co.com/Sm5S4HX/slide-1.webp" alt="" className='w-full h-full ' />
                                 
@@ -78,7 +78,7 @@ const Slide = () => {
 
                                 <Link to='/allEquipment' className="  bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] px-10 py-4  font-semibold cursor-pointer ">Shop Now</Link>
                             </div>
-                            <div className='md:w-1/2 mt-10 md:mt-0'>
+                            <div className='md:w-1/2 mt-10 md:mt-0 h-[600px]'>
                                 <img src="https://i.ibb.co.com/72jLQXT/slide-2.webp" alt="" className='w-full h-full' />
                             </div>
 

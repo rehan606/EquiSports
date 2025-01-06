@@ -40,7 +40,7 @@ const Equipments = () => {
             </div>
 
             {/* Equipments Display */}
-             <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+             <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
                  {equipments.slice(0, 8).map((equip) => (
                      <EquipCard key={equip._id} equip={equip}></EquipCard>
                  ))}

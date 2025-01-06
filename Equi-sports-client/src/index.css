@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active-link {
+    background-color: #000A50; /* Active background color */
+    color: white; /* Optional */
+  
+    
+  }
+  

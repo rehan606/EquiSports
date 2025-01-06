@@ -12,20 +12,21 @@ const Navbar = () => {
 
     const links = <>
         
-        <li className="text-white font-ZenDots" > <NavLink to='/'>Home</NavLink> </li>
+        <li className="text-white text-xs font-ZenDots"  > <NavLink to='/' className={({ isActive }) => (isActive ? 'active-link' : '')}>Home</NavLink> </li>
         
-        <li className="text-white font-ZenDots"> <NavLink to='/allEquipment'>All Equipments</NavLink> </li>
+        <li className="text-white text-xs font-ZenDots"> <NavLink to='/allEquipment' className={({ isActive }) => (isActive ? 'active-link' : '')}>All Equipments</NavLink> </li>
         {
             user && <>
-                <li className="text-white font-ZenDots"> <NavLink to='/addEquipment'>Add Sports</NavLink> </li>
+                <li className="text-white  text-xs font-ZenDots"> <NavLink to='/addEquipment' className={({ isActive }) => (isActive ? 'active-link' : '')}>Add Sports</NavLink> </li>
             </>
         }
         {
             user && <>
-                <li className="text-white font-ZenDots"> <NavLink to='/myEquipments'>My Equipments</NavLink> </li>
+                <li className="text-white text-xs font-ZenDots"> <NavLink to='/myEquipments' className={({ isActive }) => (isActive ? 'active-link' : '')}>My Equipments</NavLink> </li>
             </>
         }
-        <li className="text-white font-ZenDots" > <NavLink to='/contact'>Contact Us</NavLink> </li>
+        <li className="text-white text-xs font-ZenDots" > <NavLink to='/support' className={({ isActive }) => (isActive ? 'active-link' : '')}>Support</NavLink> </li>
+        <li className="text-white text-xs font-ZenDots" > <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active-link' : '')}>Contact</NavLink> </li>
         
         
     </>
@@ -56,7 +57,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <Link to="/" className=" text-md md:text-xl text-white font-ZenDots">Equi Sports</Link>
+                    <Link to="/" className=" text-md md:text-lg text-white font-ZenDots">Equi Sports</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

@@ -24,7 +24,7 @@ const Testimonial = () => {
                         <div className="bg-white p-6 rounded-lg shadow-md">
                             <div className="mb-4">
                                 <p className="text-yellow-500 font-bold">★★★★★</p>
-                                <h3 className="text-lg font-semibold text-red-500 mt-2">
+                                <h3 className="text-lg font-semibold text-[#000A50] mt-2">
                                     So Comfy And Great!
                                 </h3>
                             </div>
@@ -50,7 +50,7 @@ const Testimonial = () => {
                         <div className="bg-white p-6 rounded-lg shadow-md">
                             <div className="mb-4">
                                 <p className="text-yellow-400 font-bold">★★★★☆</p>
-                                <h3 className="text-lg font-semibold text-red-500 mt-2">
+                                <h3 className="text-lg font-semibold text-[#000A50] mt-2">
                                     Very Professional
                                 </h3>
                             </div>

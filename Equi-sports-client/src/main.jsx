@@ -27,6 +27,7 @@ import MyEquipments from './pages/MyEquipments.jsx';
 import UpdateEquipment from './pages/UpdateEquipment.jsx';
 import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
+import SupportPage from './pages/SupportPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -83,6 +84,10 @@ const router = createBrowserRouter([
   {
     path: 'about',
     element: <About></About>,
+  },
+  {
+    path: 'support',
+    element: <SupportPage></SupportPage>
   }
   // {
   //   path:'/update/:id',

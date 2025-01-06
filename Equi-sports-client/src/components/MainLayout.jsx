@@ -14,7 +14,7 @@ const MainLayout = () => {
             <header className='sticky top-0  z-50'>
                 <Navbar></Navbar>,
             </header>
-            <section className='bg-[#000A50]'>
+            <section className='bg-[#000A50] h-[700px]'>
                 <Slide></Slide>
             </section>
             <section>
