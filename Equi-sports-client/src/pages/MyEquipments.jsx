@@ -11,7 +11,8 @@ const MyEquipments = () => {
   
 
   useEffect(() => {
-    fetch(`https://equi-sports-server-mu.vercel.app/equipments/${user.email}`)
+    // fetch(`https://equi-sports-server-mu.vercel.app/equipments/${user.email}`)
+    fetch(`http://localhost:5000/equipments/${user.email}`)
       .then((res) => res.json())
       .then((data) => setEquipments(data));
   }, []);
@@ -68,7 +69,7 @@ const MyEquipments = () => {
 
         <ul className="grid grid-cols-1  lg:grid-cols-3 gap-4 ">
           {equipments.map((equipment) => (
-            <li className="bg-[#05264e] p-3 rounded-md" key={equipment._id}>
+            <li className="bg-[#000A50]  hover:scale-110 ease-in-out duration-300 p-3 rounded-md" key={equipment._id}>
               <div className="flex items-center justify-between gap-4 border rounded-md p-4">
                 <div className="text-white space-y-2">
                   <h3 className="font-semibold text-xl">{equipment.title}</h3>

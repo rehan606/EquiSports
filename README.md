@@ -16,7 +16,7 @@ Equi Sports is an online sports equipment store designed to provide a seamless e
 ---
 ### Layout
 
-<p align="center" > <img src="https://i.ibb.co.com/QXmwZBB/layout-2.png" alt="layout-2" border="0"> </p>
+<p align="center" > <img src="https://i.ibb.co.com/Q8DwDCR/Demo.png" alt="Demo" border="0" width="400"> </p>
 
 
 Thank you for checking out Equi Sports! Feel free to explore the live demo and share your feedback.

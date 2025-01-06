@@ -3,7 +3,7 @@ import React from 'react';
 const Testimonial = () => {
     return (
         <div>
-            <section className="bg-[#28394b] py-12">
+            <section className="bg-[#000A50] py-12">
                 <div className="max-w-7xl mx-auto px-4">
                     {/* Section Title */}
                     <div className="mb-8 text-center">

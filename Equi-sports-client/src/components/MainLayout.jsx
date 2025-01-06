@@ -6,20 +6,21 @@ import Testimonial from './Testimonial';
 import Service from './Service';
 import { Outlet } from 'react-router-dom';
 import Categories from './Categories';
+import NewsLetter from './NewsLetter';
 
 const MainLayout = () => {
     return (
         <div>
-            <header >
+            <header className='sticky top-0  z-50'>
                 <Navbar></Navbar>,
             </header>
-            <section className='bg-[#232d35]'>
+            <section className='bg-[#000A50]'>
                 <Slide></Slide>
             </section>
             <section>
                 <Outlet></Outlet>
             </section>
-            <section>
+            <section >
                 <Categories></Categories>
             </section>
             <section>
@@ -27,6 +28,9 @@ const MainLayout = () => {
             </section>
             <section>
                 <Testimonial></Testimonial>
+            </section>
+            <section>
+                <NewsLetter></NewsLetter>
             </section>
             <footer>
                 <Footer></Footer>

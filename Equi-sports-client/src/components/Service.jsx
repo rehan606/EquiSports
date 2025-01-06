@@ -7,17 +7,17 @@ import { SlCalender } from 'react-icons/sl';
 const Service = () => {
     return (
         <div>
-            <section className="bg-pink-50 py-10 md:py-20">
-            <h2 className='font-ZenDots text-3xl text-center  mb-7'>Our Services</h2>
+            <section className="bg-gray-50 py-10 md:py-20">
+            <h2 className='font-ZenDots text-3xl text-center text-[#000A50]  mb-7'>Our Services</h2>
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {/* Card 1 */}
                         
-                        <div className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                        <div className="bg-white hover:bg-[#000A50]  group p-6 rounded-lg shadow-md text-center cursor-pointer border hover:scale-110 ease-in-out duration-300">
                             <div className="flex justify-center mb-4">
-                            <IoIosWallet className="text-4xl text-orange-400"/>
+                            <IoIosWallet className="text-4xl text-[#0A14F5] group-hover:text-white"/>
                             </div>
-                            <h3 className="text-md font-semibold text-gray-800 mb-2 font-ZenDots">
+                            <h3 className="text-md  group-hover:text-white text-gray-800 mb-2 font-ZenDots">
                                 Payment & Delivery
                             </h3>
                             <p className="text-gray-600 text-sm">
@@ -27,11 +27,11 @@ const Service = () => {
                         
 
                         {/* Card 2 */}
-                        <div className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                        <div className="bg-white hover:bg-[#000A50]  group p-6 rounded-lg shadow-md text-center cursor-pointer border hover:scale-110 ease-in-out duration-300">
                             <div className="flex justify-center mb-4">
-                            <GiWallet className="text-4xl text-orange-400" />
+                            <GiWallet className="text-4xl text-[#0A14F5] group-hover:text-white" />
                             </div>
-                            <h3 className="text-md font-semibold text-gray-800 mb-2 font-ZenDots">
+                            <h3 className="text-md  group-hover:text-white text-gray-800 mb-2 font-ZenDots">
                                 Return Product
                             </h3>
                             <p className="text-gray-600 text-sm">
@@ -41,11 +41,11 @@ const Service = () => {
 
                         {/* Card 3 */}
 
-                        <div className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                        <div className="bg-white hover:bg-[#000A50]  group p-6 rounded-lg shadow-md text-center cursor-pointer border hover:scale-110 ease-in-out duration-300">
                             <div className="flex justify-center mb-4">
-                            <SlCalender className="text-4xl text-orange-400"/>
+                            <SlCalender className="text-4xl text-[#0A14F5] group-hover:text-white"/>
                             </div>
-                            <h3 className="text-md font-semibold text-gray-800 mb-2 font-ZenDots">
+                            <h3 className="text-md  group-hover:text-white text-gray-800 mb-2 font-ZenDots">
                                 30 Days Guarantee
                             </h3>
                             <p className="text-gray-600 text-sm">
@@ -54,11 +54,11 @@ const Service = () => {
                         </div>
 
                         {/* Card 4 */}
-                        <div className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                        <div className="bg-white hover:bg-[#000A50]  group p-6 rounded-lg shadow-md text-center cursor-pointer border  hover:scale-110 ease-in-out duration-300">
                             <div className="flex justify-center mb-4">
-                            <MdHeadsetMic className="text-4xl text-orange-400"/>
+                            <MdHeadsetMic className="text-4xl text-[#0A14F5] group-hover:text-white"/>
                             </div>
-                            <h3 className="text-md font-semibold text-gray-800 mb-2 font-ZenDots">
+                            <h3 className="text-md  group-hover:text-white text-gray-800 mb-2 font-ZenDots">
                                 Quality Support
                             </h3>
                             <p className="text-gray-600 text-sm">

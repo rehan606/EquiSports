@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-[#011b1c] text-white py-8 md:px-8 lg:px-10">
+            <footer className="bg-[#000A50] text-white py-8 md:px-8 lg:px-10">
                 <div className="container mx-auto px-4">
                      
                     {/* Footer Grid */}
@@ -97,7 +97,7 @@ const Footer = () => {
                     </div>
 
                     {/* Footer Bottom */}
-                    <div className="mt-8 text-center text-sm text-gray-400">
+                    <div className="mt-8  text-center text-sm text-gray-400">
                         © {new Date().getFullYear()} Equipment Sports. All Rights Reserved by <span className='text-[#ff7029]'>REHAN</span>.
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { AuthContext } from "../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import Footer from "../components/Footer";
 
 const AddEquipment = () => {
   const { user } = useContext(AuthContext);
@@ -38,7 +39,8 @@ const AddEquipment = () => {
 
     console.log(newEquipment);
 
-    fetch("https://equi-sports-server-mu.vercel.app/equipments", {
+    // fetch("https://equi-sports-server-mu.vercel.app/equipments", {
+    fetch("http://localhost:5000/equipments", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -284,6 +286,8 @@ const AddEquipment = () => {
           </form>
         </div>
       </div>
+
+      <Footer></Footer>
     </div>
   );
 };

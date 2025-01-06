@@ -126,7 +126,7 @@ const SignIn = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full py-2 px-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            className="w-full py-2 px-4 bg-[#0A14F5] text-white hover:bg-[#000a50]  font-semibold rounded-lg  focus:outline-none focus:ring-2 focus:ring-orange-500"
                         >
                             Login
                         </button>

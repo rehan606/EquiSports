@@ -25,6 +25,8 @@ import PrivetRouter from './router/PrivetRouter.jsx';
 import Categories from './components/Categories.jsx';
 import MyEquipments from './pages/MyEquipments.jsx';
 import UpdateEquipment from './pages/UpdateEquipment.jsx';
+import Contact from './pages/Contact.jsx';
+import About from './pages/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,8 +37,8 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Equipments></Equipments>,
-        loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
-        // loader: () => fetch('http://localhost:5000/equipments'),
+        // loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
+        loader: () => fetch('http://localhost:5000/equipments'),
       },
       
     ]
@@ -44,8 +46,8 @@ const router = createBrowserRouter([
   {
     path: 'allEquipment',
     element: <AllEquipments></AllEquipments>,
-    loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
-    // loader: () => fetch('http://localhost:5000/equipments'),
+    // loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
+    loader: () => fetch('http://localhost:5000/equipments'),
   },
   {
     path: 'addEquipment',
@@ -68,12 +70,20 @@ const router = createBrowserRouter([
   },
   {
     path:'/details',
-    element: <PrivetRouter>  <Details></Details>  </PrivetRouter>,
+    element: <Details></Details>,
   },
   {
     path:'/myEquipments',
     element: <PrivetRouter> <MyEquipments></MyEquipments> </PrivetRouter>  ,
   },
+  {
+    path: 'contact',
+    element: <Contact></Contact>,
+  },
+  {
+    path: 'about',
+    element: <About></About>,
+  }
   // {
   //   path:'/update/:id',
   //   element: <UpdateEquipment></UpdateEquipment>,

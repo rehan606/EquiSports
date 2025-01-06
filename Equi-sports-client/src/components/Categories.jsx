@@ -6,7 +6,8 @@ const Categories = () => {
 
     useEffect(() => {
        
-        fetch('https://equi-sports-server-mu.vercel.app/equipments')
+        // fetch('https://equi-sports-server-mu.vercel.app/equipments')
+        fetch('http://localhost:5000/equipments')
             .then((response) => response.json())
             .then((data) => {
                 setCategories(data);
@@ -17,12 +18,12 @@ const Categories = () => {
     }, []);
 
     return (
-        <div className='bg-[#232d35]'>
+        <div className='bg-[#000A50]'>
             <div className='w-11/12 mx-auto py-10 md:py-20'>
                 <h2 className='font-ZenDots text-3xl text-center text-white mb-7'>Categories</h2>
                 <ul className='grid grid-cols-2 md:gird-cols-4 lg:flex gap-3 justify-center'>
                     {uniqueCategories.map((category, index) => (
-                        <div className='bg-orange-400 py-5 px-10 rounded-md cursor-pointer '>
+                        <div className='bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] py-5 px-10 rounded-md cursor-pointer '>
                             <li key={index} className='font-ZenDots'> {category}</li>
                         </div>
                     ))}

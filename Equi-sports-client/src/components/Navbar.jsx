@@ -25,11 +25,12 @@ const Navbar = () => {
                 <li className="text-white font-ZenDots"> <NavLink to='/myEquipments'>My Equipments</NavLink> </li>
             </>
         }
+        <li className="text-white font-ZenDots" > <NavLink to='/contact'>Contact Us</NavLink> </li>
         
         
     </>
     return (
-        <div className="bg-[#28394b] ">
+        <div className="bg-[#0A14F5] ">
             <div className="navbar w-11/12 mx-auto ">
                 <div className="navbar-start ">
                     <div className="dropdown -ml-2">
@@ -123,9 +124,9 @@ const Navbar = () => {
                             :
 
                             (<div className=''>
-                                (<Link to='/auth/register' className="bg-white px-2 py-2 md:px-7 md:py-3 text-[#ff7029] md:font-semibold rounded-md cursor-pointer">  Register </Link>)
+                                <Link to='/auth/register' className="bg-white hover:bg-[#000A50] hover:text-white px-2 py-2 md:px-7 md:py-3 text-[#000A50] md:font-semibold rounded-md cursor-pointer">  Register </Link>
 
-                                (<Link to='/auth/login' className="bg-[#ff7029] px-2 py-2 md:px-7 md:py-3 text-white md:font-semibold rounded-md cursor-pointer">  Login </Link>)
+                                <Link to='/auth/login' className="bg-[#000A50] hover:bg-white hover:text-[#000A50] ml-2 px-2 py-2 md:px-7 md:py-3 text-white md:font-semibold rounded-md cursor-pointer">  Login </Link>
                             </div>)
 
 

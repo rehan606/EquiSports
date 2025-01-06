@@ -9,7 +9,8 @@ const Details = () => {
   useEffect(() => {
     const fetchEquipment = async () => {
       try {
-        const response = await fetch(`https://equi-sports-server-mu.vercel.app/equipments/${id}`);
+        // const response = await fetch(`https://equi-sports-server-mu.vercel.app/equipments/${id}`);
+        const response = await fetch(`http://localhost:5000/equipments/${id}`);
         const data = await response.json();
         if (data.status) {
           setEquipment(data.data);
@@ -42,7 +43,7 @@ const Details = () => {
   } = equipment;
 
   return (
-    <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6 mt-10">
+    <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-6 mt-10">
       <img
         src={image}
         alt={title}

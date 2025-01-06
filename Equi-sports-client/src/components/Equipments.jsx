@@ -17,11 +17,11 @@ const Equipments = () => {
     };
 
     return (
-        <div className='py-20'>
+        <div className='py-20 bg-gray-50'>
             <div className='w-11/12 mx-auto'>
                 {/* Section Title */}
                 <div className="mb-10 text-center">
-                    <h2 className="text-2xl md:text-3xl font-bold text-orange-500 font-ZenDots pb-1">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#000A50] font-ZenDots pb-1">
                         Equipments
                     </h2>
                     <p className='text-gray-500 font-ZenDots'>Collect your Favourite Equipments</p>
@@ -32,7 +32,7 @@ const Equipments = () => {
                     {/* Sort Button */}
                     <button
                         onClick={handleSortByPrice}
-                        className="mt-4 bg-orange-500 hover:bg-gray-600 text-white py-2 px-4 flex items-center gap-2"
+                        className="mt-4 bg-[#0A14F5] hover:bg-gray-600 text-white py-2 px-4 flex items-center gap-2"
                     >
                         Sort by Price <FaSortAmountDownAlt />
                     </button>

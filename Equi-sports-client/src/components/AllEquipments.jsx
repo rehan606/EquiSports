@@ -1,7 +1,8 @@
 
-import { useLoaderData, useNavigate } from 'react-router-dom';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FaStar } from 'react-icons/fa6';
+import Footer from './Footer';
 
 const AllEquipments = () => {
 
@@ -21,61 +22,48 @@ const AllEquipments = () => {
                 <Navbar></Navbar>
             </header>
 
-            <div className=" w-11/12 mx-auto pt-10  ">
-
-
-                <table className="w-full border-collapse">
-                    <thead>
-                        <tr className="bg-[#232d35] text-white">
-                            <th className="py-3 px-4 text-left text-sm font-medium text-white">
-                                ID
-                            </th>
-                            <th className="py-3 px-4 text-left text-sm font-medium text-white">
-                                Title
-                            </th>
-                            <th className="py-3 px-4 text-left text-sm font-medium text-white">
-                                Category
-                            </th>
-                            <th className="py-3 px-4 text-left text-sm font-medium text-white">
-                                Price
-                            </th>
-                            <th className="py-3 px-4 text-left text-sm font-medium text-white">
-                                Rating
-                            </th>
-                            <th className="py-3 px-4 text-left text-sm font-medium text-white">
-                                Status
-                            </th>
-                            
-                            <th className="py-3 px-4 text-center text-sm font-medium text-white">
-                                Action
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        {
-                            equipment.map((equip, index) => <tr key={equip._id} className="border-b">
-                                <td className="py-2 px-4 text-sm text-gray-700">{index + 1}</td>
-                                <td className="py-2 px-4 text-sm text-gray-700">
+            <div className=" w-11/12 mx-auto pt-10 pb-10 ">
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
+                    {
+                        equipment.map(equip => <div key={equip._id} className="w-full mx-auto border bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg  hover:scale-110 ease-in-out duration-300">
+                            {/* Product Image */}
+                            <img
+                                src={equip.image}
+                                alt="Product"
+                                className="w-full h-48 object-cover"
+                            />
+            
+                            {/* Product Details */}
+                            <div className="p-6 text-center">
+                                {/* Title */}
+                                <h3 className="text-md  font-ZenDots text-gray-800">
                                     {equip.title}
-                                </td>
-                                <td className="py-2 px-4 text-sm text-gray-700">
-                                    {equip.category}
-                                </td>
-                                <td className="py-2 px-4 text-sm text-gray-700 "><span className='font-bold'>$</span> {equip.price}</td>
-                                <td className="py-2 px-4 text-sm text-gray-700 flex flex-row items-center gap-1"> {equip.rating} <FaStar/></td>
-                                <td className="py-2 px-4 text-sm text-gray-700 ">Stock: {equip.status} Pic</td>
-                                <td className="py-2 px-4 text-center">
-                                    <button onClick={() => handleViewDetails(equip)} className="bg-purple-500 hover:bg-purple-600 text-white px-2 py-1 rounded-md mr-2">
-                                        View Details
-                                    </button>
-                                    
-                                </td>
-                            </tr>)
-                        }
-                    </tbody>
-                </table>
+                                </h3>
+            
+                                {/* Rating */}
+                                <div className="flex  items-center   justify-center">
+                                    <span className="text-yellow-500 text-lg">★ ★ ★ ★ ☆  </span>
+                                    <span className="text-gray-600 text-sm ml-2">({equip.rating})</span>
+                                </div>
+            
+                                {/* Price */}
+                                <p className="text-gray-800 font-bold text-xl ">${equip.price}</p>
+            
+                                {/* View Details Button */}
+                               
+                                <button onClick={() => handleViewDetails(equip)} className="mt-4 w-full bg-[#0A14F5] text-white hover:bg-[#000a50] py-2 px-4 rounded-md ">
+                                    View Details
+                                </button>
+
+                               
+                            </div>
+                        </div>)
+                    }
+                </div>
+
+                
             </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -8,6 +8,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
+import { Link } from 'react-router-dom';
 
 const Slide = () => {
     return (
@@ -35,7 +36,7 @@ const Slide = () => {
                                 
                                     <h4 className='text-white fnot-semibold text-xl pb-10 '>Your One-Stop Shop for Premium Sports Equipment</h4>
                                                                  
-                                    <a  className="  bg-[#ff7029] px-10 py-4 text-white font-semibold cursor-pointer ">Shop Now</a>
+                                    <Link to='/allEquipment'  className="  bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] px-10 py-4  font-semibold cursor-pointer ">Shop Now</Link>
                                 
                             </div>
                             <div className=' md:w-1/2 mt-10 md:mt-0'>
@@ -55,7 +56,7 @@ const Slide = () => {
 
                                 <h4 className='text-white fnot-semibold text-xl pb-10 '>Browse our selection of sports equipment and find the perfect gear for your next game.</h4>
 
-                                <a className="  bg-[#ff7029] px-10 py-4 text-white font-semibold cursor-pointer ">Shop Now</a>
+                                <Link to='/allEquipment' className="  bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] px-10 py-4  font-semibold cursor-pointer ">Shop Now</Link>
                             </div>
                             <div className='md:w-1/2 mt-10 md:mt-0'>
 
@@ -75,7 +76,7 @@ const Slide = () => {
 
                                 <h4 className='text-white fnot-semibold text-xl pb-10 '>Whether you're a professional athlete or just getting started, EquiSports offers the best selection of sports equipment to meet your needs.</h4>
 
-                                <a className="  bg-[#ff7029] px-10 py-4 text-white font-semibold cursor-pointer ">Shop Now</a>
+                                <Link to='/allEquipment' className="  bg-[#0A14F5] text-white hover:bg-white hover:text-[#0A14F5] px-10 py-4  font-semibold cursor-pointer ">Shop Now</Link>
                             </div>
                             <div className='md:w-1/2 mt-10 md:mt-0'>
                                 <img src="https://i.ibb.co.com/72jLQXT/slide-2.webp" alt="" className='w-full h-full' />
