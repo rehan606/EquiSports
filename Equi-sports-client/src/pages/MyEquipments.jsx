@@ -11,8 +11,8 @@ const MyEquipments = () => {
   
 
   useEffect(() => {
-    // fetch(`https://equi-sports-server-mu.vercel.app/equipments/${user.email}`)
-    fetch(`http://localhost:5000/equipments/${user.email}`)
+    fetch(`https://equi-sports-server-mu.vercel.app/equipments/${user.email}`)
+    // fetch(`http://localhost:5000/equipments/${user.email}`)
       .then((res) => res.json())
       .then((data) => setEquipments(data));
   }, []);

@@ -6,8 +6,8 @@ const Categories = () => {
 
     useEffect(() => {
        
-        // fetch('https://equi-sports-server-mu.vercel.app/equipments')
-        fetch('http://localhost:5000/equipments')
+        fetch('https://equi-sports-server-mu.vercel.app/equipments')
+        // fetch('http://localhost:5000/equipments')
             .then((response) => response.json())
             .then((data) => {
                 setCategories(data);

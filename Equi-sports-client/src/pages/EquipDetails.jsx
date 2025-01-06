@@ -9,8 +9,8 @@ const Details = () => {
   useEffect(() => {
     const fetchEquipment = async () => {
       try {
-        // const response = await fetch(`https://equi-sports-server-mu.vercel.app/equipments/${id}`);
-        const response = await fetch(`http://localhost:5000/equipments/${id}`);
+        const response = await fetch(`https://equi-sports-server-mu.vercel.app/equipments/${id}`);
+        // const response = await fetch(`http://localhost:5000/equipments/${id}`);
         const data = await response.json();
         if (data.status) {
           setEquipment(data.data);

@@ -37,8 +37,8 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Equipments></Equipments>,
-        // loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
-        loader: () => fetch('http://localhost:5000/equipments'),
+        loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
+        // loader: () => fetch('http://localhost:5000/equipments'),
       },
       
     ]
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
   {
     path: 'allEquipment',
     element: <AllEquipments></AllEquipments>,
-    // loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
-    loader: () => fetch('http://localhost:5000/equipments'),
+    loader: () => fetch('https://equi-sports-server-mu.vercel.app/equipments')
+    // loader: () => fetch('http://localhost:5000/equipments'),
   },
   {
     path: 'addEquipment',
